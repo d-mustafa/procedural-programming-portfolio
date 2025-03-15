@@ -38,6 +38,10 @@ img:hover {
     width: 500px;
 }
 
+#dice:hover {
+    border-radius: 200px;
+}
+
 /* table */
 table {
     margin: auto;
