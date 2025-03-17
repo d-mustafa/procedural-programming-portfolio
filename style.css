@@ -1,18 +1,18 @@
 html {
+    height: 100%;
     background-color: grey;
 }
 body {
     margin: auto;
-    width: 95%;
-    height: 100%;
-    padding: 30px;
+    width: 100%;
+    padding: 10px;
     background-image: linear-gradient(to bottom right, white, grey);
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1, h3 {
-    text-align: right;
+    text-align: middle;
 }
 
 /* images */
@@ -36,10 +36,6 @@ img:hover {
 
 #vivaldi {
     width: 500px;
-}
-
-#dice:hover {
-    border-radius: 200px;
 }
 
 /* table */
