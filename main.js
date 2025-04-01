@@ -1,9 +1,9 @@
 // PROCEDURAL PROGRAMMING PORTFOLIO
 
-vivaldiIMG = document.getElementById("vivaldi");
-operatorsIMG = document.getElementById("operators");
-vivaldiCounter = 0;
-operatorsCounter = 0;
+let vivaldiIMG = document.getElementById("vivaldi");
+let operatorsIMG = document.getElementById("operators");
+let vivaldiCounter = 0;
+let operatorsCounter = 0;
 
 // Intervals for Vivaldi and Operators
 swapVivaldiImageInterval = setInterval(function() {
@@ -41,12 +41,27 @@ function swapImage(counter, element, img1, img2, img3, img4) {
 }
 
 
-diceIMG = document.getElementById("dice");
-degrees = 0;
-diceInterval = setInterval(rotateDice, 50);
+let diceIMG = document.getElementById("dice");
+let degrees = 0;
+let diceInterval = setInterval(rotateDice, 50);
 
 // Dice Rotation
 function rotateDice() {
     degrees += 10;
     diceIMG.style.transform = `rotate(${degrees}deg)`;
+}
+
+
+// KFP slideshow
+let kfpInterval = setInterval(swapKFP, 1000);
+let kfpIMG = document.getElementById("kfp")
+let characters = ['tigress', 'po']
+let charCounter = 1;
+
+function swapKFP() {
+    kfpIMG.src = `images/${characters[charCounter]}.png`
+    charCounter++
+    if (charCounter >= 2) {
+        charCounter = 0;
+    }
 }
